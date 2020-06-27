@@ -16,9 +16,9 @@ def PatternUnlock(N, hits):
         4: '3_1',
         5: '2_1',
         6: '1_1',
-        7: '1_3',
+        7: '3_3',
         8: '2_3',
-        9: '3_3'
+        9: '1_3'
     }
     index = 1
     distance = Decimal('0')
@@ -34,3 +34,8 @@ def PatternUnlock(N, hits):
         if (char != '.') & (char != '0'):
             result += char
     return result
+
+
+# y = PatternUnlock(3, [2, 1, 9])
+y = PatternUnlock(10, [1, 2, 3, 4, 5, 6, 2, 7, 8, 9])
+print(y)
